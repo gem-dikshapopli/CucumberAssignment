@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Application Login" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-07-04T05:42:37" hostname="GEMGN-210415" time="7.464">
+  <properties/>
+  <testcase name="Amazon First Book Name" classname="Application Login" time="7.464"/>
+  <system-out><![CDATA[
+@Demo1 @test1
+Scenario: Amazon First Book Name               # src/test/resources/features/Demo.feature:6
+  Given User Is On The Home Page Of Amazon     # stepdefination.StepDefination.openLink()
+  When User Will Enter Books In The Search Box # stepdefination.StepDefination.search()
+Metamorphosis
+  And Name Of The First Book Will Be Printed   # stepdefination.StepDefination.firstBook()
+  Then Chrome Will be Closed                   # stepdefination.StepDefination.quit()
+]]></system-out>
+  <system-err><![CDATA[Jul 04, 2023 11:12:37 AM org.openqa.selenium.manager.SeleniumManager getDriverPath
+INFO: Applicable driver not found; attempting to install with Selenium Manager (Beta)
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 32773
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 04, 2023 11:12:39 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 114, so returning the closest version found: 113
+]]></system-err>
+</testsuite>
